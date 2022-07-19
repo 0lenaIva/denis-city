@@ -1,0 +1,74 @@
+body{
+	background-image:radial-gradient(red, orange, yellow, green, blue, lightblue, purple);
+}
+
+h1{
+	text-align:center;
+	color:aqua;
+}
+
+a{
+	color:aqua;
+	text-align:center;
+	border:3px solid turquoise;
+	border-radius:5px;
+	padding:7px 15px;
+	margin-top:10px;
+	margin-left:50%;
+	font-size:30px;
+	text-decoration:none;
+}
+
+a:hover{
+	background-image:linear-gradient(blue, yellow);
+	transition-duration:10s;
+}
+
+div{
+	position:relative;
+	overflow:hidden;
+	background-image:linear-gradient(rgb(1, 143, 177),rgb(1, 219, 242));
+	height:600px;
+    width:100%;
+	box-shadow:inset 5px 5px 5px 5px rgb(1, 219, 242);
+}
+
+.plane{
+	position:absolute;
+	width:150px;
+	top:60%;
+	left:0;
+	animation-name:fly;
+	animation-duration:15s;
+	animation-iteration-count:infinite;
+}
+
+.city{
+	position:absolute;
+	width:100%;
+}
+
+.car{
+	position:absolute;
+	width:150px;
+	top:85%;
+	left:90%;
+	animation-name:move;
+	animation-duration:30s;
+	animation-iteration-count:infinite;
+	animation-delay:3s;
+}
+
+@-webkit-keyframes move{
+	from{}
+	to{
+		left:0;
+	}
+}
+@-webkit-keyframes fly{
+    from{}
+	to{
+      top:0;
+	  left:90%;
+	  transform:scale(3);}
+}
